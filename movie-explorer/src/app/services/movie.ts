@@ -12,12 +12,6 @@ private movieApi = 'http://localhost:3000/movies';
 
   // Fetch all movies
   getMovies(): Observable<MovieItem[]> {
-    console.log(this.http.get<MovieItem[]>(this.movieApi))
     return this.http.get<MovieItem[]>(this.movieApi);
-  }
-
-  // Search movies by title
-  searchMovies(query: string): Observable<MovieItem[]> {
-    return this.http.get<MovieItem[]>(`${this.movieApi}?title_like=${query}`);
   }
 }

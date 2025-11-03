@@ -9,6 +9,6 @@ import { FavoritesComponent } from './components/favorites-component/favorites-c
 // after destroying the past components.....  with ngOnDestroy()
 export const routes: Routes = [
     {path : ''  , component : HomeComponent},
-    {path : 'details'  , component : MovieDetailComponent},
+    {path : 'movie/:id'  , component : MovieDetailComponent},
     {path: 'favorite' ,  component : FavoritesComponent},
 ];

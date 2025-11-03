@@ -1,0 +1,5 @@
+<a [routerLink]="['/movie', movie.id]" class="movie-card-link">
+  <div class="movie-card" *ngIf="movie">
+    <h3>{{ movie.title }} ({{ movie.year }})</h3>
+  </div>
+</a>

@@ -1,0 +1,23 @@
+.movie-card {
+  background-color: #f0f0f0; /* light grey background */
+  color: #333;               /* dark text */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  padding: 16px;
+  margin: 12px;
+  width: 220px;
+  text-align: center;
+  display: inline-block;      /* allows multiple cards side by side */
+  vertical-align: top;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.movie-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.movie-card h3 {
+  font-size: 18px;
+  margin: 0;
+}

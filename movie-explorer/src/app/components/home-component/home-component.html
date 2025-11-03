@@ -1,1 +1,11 @@
-<p>home-component works!</p>
+<h2>Movie Explorer</h2>
+<div class="home-container">
+    <div *ngIf="movies.length === 0">
+        Loading movies...
+    </div>
+
+    <div *ngFor="let movie of movies">
+        <app-movie-card-component [movie]="movie"></app-movie-card-component>
+    </div>
+
+</div>
